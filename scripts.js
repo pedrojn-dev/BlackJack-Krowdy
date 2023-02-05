@@ -20,7 +20,7 @@ const tipos = ["C", "D", "H", "S"],
   especiales = ["A", "J", "Q", "K"];
 
 /** Inicializa la app */
-const init = (cantidadJugadores = 3) => {
+const init = (cantidadJugadores = 2) => {
   baraja = crearBaraja();
   jugadoresPuntos = [];
 
@@ -116,11 +116,7 @@ const determinarGanador = ([jugadorPuntos, computadoraPuntos]) => {
     }
 
     if (computadoraPuntos > 21) {
-      alert("Jugador 1 Gana!");
-      return;
-    }
-    if (computadoraPuntos > 21) {
-      alert("Jugador 2 Gana!");
+      alert("Jugador Gana!");
       return;
     }
 
@@ -130,12 +126,7 @@ const determinarGanador = ([jugadorPuntos, computadoraPuntos]) => {
     }
 
     if (jugadorPuntos > computadoraPuntos) {
-      alert("Jugador 1 gana!");
-      return;
-    }
-
-    if (jugadorPuntos > computadoraPuntos) {
-      alert("Jugador 2 gana!");
+      alert("Jugador gana!");
       return;
     }
 
